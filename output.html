@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+.nav>li>a {
+    background-color: #FDFAF7;
+    color: #24272B;
+}
+.around {
+    border: 2px solid #cac8c5;
+    padding: 3px;
+    margin-bottom: 8px;
+}
+.positioning {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+</style>
+
+</head>
+<body style="background-color: darkblue;">
+    <br>
+    <div class="card" style="border: 2px solid black; width: 410px; height: 550px; margin: auto;">
+        <div class="card-body" style="background-color: #faf0e6;overflow: scroll;">
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="define-tab" data-toggle="tab" href="#define" role="tab" aria-controls="define" aria-selected="true">Define</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="synonym-tab" data-toggle="tab" href="#synonym" role="tab" aria-controls="synonym" aria-selected="false">Synonyms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="rhyme-tab" data-toggle="tab" href="#rhyme" role="tab" aria-controls="rhyme" aria-selected="false">Rhymes</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="misc-tab" data-toggle="tab" href="#misc" role="tab" aria-controls="misc" aria-selected="false">Misc</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="define" role="tabpanel" aria-labelledby="define-tab" style="background-color: white;">         
+                    <br>
+                    <div class="positioning">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-bottom: 8px; margin-top: -5px;" onclick="gotosearch()">Search For Another Word</button>
+                            <h1>Word</h1>
+                            <h6>/ 'pro-noun-si-as-shion/</h6>
+                            <hr>
+                        </div>
+                        <h5>Word<sup>1</sup> - (noun)</h5>
+                        <h6>noun: word; plural noun: words</h6>
+                        <ol>
+                            <li><b>a unit of language that native speakers can identify</b><br><i>Ex: He hardly said ten words all morning.</i></li>
+                            <li><b>a brief statement</b><br><i>Ex: He didn't say a word about it</i></li>
+                            <li><b>information about recent and important events</b><br><i>Ex: There is word that the Maple Leafs plan on trading Marner for Stamkos</i></li>
+                        </ol>   
+                        <hr>
+                        <h5>Word<sup>2</sup> - (verb)</h5>
+                        <h6>verb: word; past tense: worded; past participle: worded; gerund or present participle: wording; 3rd person present: words;</h6>
+                        <ol>
+                            <li><b>to put into words or an expression</b><br><i>Ex: Word it</i></li>
+                        </ol>      
+                        <hr>        
+                        <h5>Word<sup>3</sup> - (Urban Dictionary)</h5>
+                        <ol>
+                            <li><b>"Word" is the shortened form of the phrase: "[my word is my bond]" which was originated by inmates in U.S. [prisons]. The longer phrase was shortened to "[word is bond]" before becoming "word," which is most commonly used. It basically means "truth." Or "to speak the truth."</b><br><i>Ex: "Yo, I destroyed [twelve] boxers last night." "Word?" ("You speak [the truth]?") "Word." ("[I speak the truth].")</i></li>
+
+                        </ol>                   
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="synonym" role="tabpanel" aria-labelledby="synonym-tab" style="background-color: white;">
+                    <br>
+                    <div class="positioning">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-bottom: 8px; margin-top: -5px;" onclick="gotosearch()">Search For Another Word</button>
+                            <h1>Word</h1>
+                            <hr>
+                        </div>
+                        <h5>Meaning: term</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">name</li>
+                            <li class="list-inline-item around">expression</li>
+                            <li class="list-inline-item around">designation</li>
+                            <li class="list-inline-item around">locution</li>
+                        </ol> 
+                        <hr>
+                        <h5>Meaning: phrase</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">express</li>
+                            <li class="list-inline-item around">put</li>
+                            <li class="list-inline-item around">couch</li>
+                            <li class="list-inline-item around">frame</li>
+                            <li class="list-inline-item around">set forth</li>
+                            <li class="list-inline-item around">formulate</li>
+                            <li class="list-inline-item around">style</li>
+                        </ol> 
+                        <hr>
+                        <h5>Synoynms From Datamuse API</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">phrase</li>
+                            <li class="list-inline-item around">watchword</li>
+                            <li class="list-inline-item around">tidings</li>
+                            <li class="list-inline-item around">news</li>
+                            <li class="list-inline-item around">bible</li>
+                            <li class="list-inline-item around">scripture</li>
+                            <li class="list-inline-item around">password</li>
+                            <li class="list-inline-item around">holy scripture</li>
+                            <li class="list-inline-item around">countersign</li>
+                            <li class="list-inline-item around">articulate</li>
+                            <li class="list-inline-item around">discussion</li>
+                            <li class="list-inline-item around">intelligence</li>
+                            <li class="list-inline-item around">son</li>
+                            <li class="list-inline-item around">formulate</li>
+                            <li class="list-inline-item around">parole</li>
+                        </ol> 
+                        <hr>
+                        <h5>Antonyms From Datamuse API</h5>
+                        <p><i>No antonyms for "word"</i></p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="rhyme" role="tabpanel" aria-labelledby="rhyme-tab" style="background-color: white;">         
+                    <br>
+                    <div class="positioning">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-bottom: 8px; margin-top: -5px;" onclick="gotosearch()">Search For Another Word</button>
+                            <h1>Word</h1>
+                            <hr>
+                        </div>
+                        <h5>Words That Best Rhyme With word:</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">bluebird</li>
+                            <li class="list-inline-item around">bird</li>
+                            <li class="list-inline-item around">absurd</li>
+                            <li class="list-inline-item around">incurred</li>
+                            <li class="list-inline-item around">nerd</li>
+                            <li class="list-inline-item around">herd</li>
+                            <li class="list-inline-item around">heard</li>
+                            <li class="list-inline-item around">occurred</li>
+                            <li class="list-inline-item around">preferred</li>
+                            <li class="list-inline-item around">deferred</li>
+                            <li class="list-inline-item around">deterred</li>
+                            <li class="list-inline-item around">curd</li>
+                            <li class="list-inline-item around">inferred</li>
+                            <li class="list-inline-item around">third</li>
+                            <li class="list-inline-item around">gird</li>
+                            <li class="list-inline-item around">demurred</li>
+                            <li class="list-inline-item around">hummingbird</li>
+                            <li class="list-inline-item around">referred</li>
+                            <li class="list-inline-item around">crossword</li>
+                            <li class="list-inline-item around">byword</li>
+                            <li class="list-inline-item around">transferred</li>
+                            <li class="list-inline-item around">keyword</li>
+                            <li class="list-inline-item around">catbird</li>
+                            <li class="list-inline-item around">conferred</li>
+                            <li class="list-inline-item around">hurd</li>
+                            <li class="list-inline-item around">concurred</li>
+                            <li class="list-inline-item around">gerd</li>
+                            <li class="list-inline-item around">foreword</li>
+                            <li class="list-inline-item around">kingbird</li>
+                            <li class="list-inline-item around">watchword</li>
+                            <li class="list-inline-item around">mockingbird</li>
+                            <li class="list-inline-item around">blurred</li>
+                            <li class="list-inline-item around">interred</li>
+                            <li class="list-inline-item around">byrd</li>
+                            <li class="list-inline-item around">thunderbird</li>
+                            <li class="list-inline-item around">spurred</li>
+                            <li class="list-inline-item around">ladybird</li>
+                            <li class="list-inline-item around">password</li>
+                            <li class="list-inline-item around">firebird</li>
+                            <li class="list-inline-item around">snowbird</li>
+                            <li class="list-inline-item around">stirred</li>
+                            <li class="list-inline-item around">songbird</li>
+                            <li class="list-inline-item around">kurd</li>
+                            <li class="list-inline-item around">redbird</li>
+                            <li class="list-inline-item around">undeterred</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="misc" role="tabpanel" aria-labelledby="misc-tab" style="background-color: white;">
+                    <br>
+                    <div class="positioning">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-bottom: 8px; margin-top: -5px;" onclick="gotosearch()">Search For Another Word</button>
+                            <h1>Word</h1>
+                            <hr>
+                        </div>
+                        <h5>Origin of word:</h5>
+                        <p><i>Old English, of Germanic origin; related to Dutch woord and German Wort, from an Indo-European root shared by Latin verbum ‘word’.</i></p>
+                        <hr>
+                        <h5>Words Used To Describe/Described By word:</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">last</li>
+                            <li class="list-inline-item around">single</li>
+                            <li class="list-inline-item around">first</li>
+                            <li class="list-inline-item around">same</li>
+                            <li class="list-inline-item around">greek</li>
+                            <li class="list-inline-item around">final</li>
+                            <li class="list-inline-item around">key</li>
+                            <li class="list-inline-item around">utter</li>
+                            <li class="list-inline-item around">right</li>
+                            <li class="list-inline-item around">english</li>
+                            <li class="list-inline-item around">latin</li>
+                            <li class="list-inline-item around">very</li>
+                            <li class="list-inline-item around">better</li>
+                            <li class="list-inline-item around">french</li>
+                            <li class="list-inline-item around">divine</li>
+                            <li class="list-inline-item around">german</li>
+                            <li class="list-inline-item around">correct</li>
+                        </ol>
+                        <hr>
+                        <h5>Words Strongly Associated With word:</h5>
+                        <ol class="list-inline">
+                            <li class="list-inline-item around">cognate</li>
+                            <li class="list-inline-item around">meaning</li>
+                            <li class="list-inline-item around">adjective</li>
+                            <li class="list-inline-item around">syllable</li>
+                            <li class="list-inline-item around">verb</li>
+                            <li class="list-inline-item around">noun</li>
+                            <li class="list-inline-item around">meanings</li>
+                            <li class="list-inline-item around">suffix</li>
+                            <li class="list-inline-item around">derives</li>
+                            <li class="list-inline-item around">plural</li>
+                            <li class="list-inline-item around">translates</li>
+                            <li class="list-inline-item around">vowel</li>
+                            <li class="list-inline-item around">processor</li>
+                            <li class="list-inline-item around">sanskrit</li>
+                            <li class="list-inline-item around">means</li>
+                            <li class="list-inline-item around">literally</li>
+                            <li class="list-inline-item around">pronounciation</li>
+                        </ol>
+                    </div>
+                </div>       
+        </div>
+    </div>
+</body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+
+    function gotosearch() {
+        window.location.replace("index.html")
+    }
+
+</script>
+
+</html>
